@@ -1,21 +1,28 @@
-import { useContext } from 'react';
-import AboutMeContext from '../../context/AboutMeContext';
 import AboutClientSingle from './AboutClientSingle';
+import { technologiesData } from '../../data/technologyData';
+import { technologiesHeading } from '../../data/technologyData';
 
 const AboutClients = () => {
-	const { clientsData, clientsHeading } = useContext(AboutMeContext);
-
 	return (
 		<div className="mt-10 sm:mt-20">
 			<p className="font-general-medium text-2xl sm:text-3xl  text-center text-primary-dark dark:text-primary-light">
-				{clientsHeading}
+				{technologiesHeading}
 			</p>
-			<div className="grid grid-cols-2 sm:grid-cols-4 mt-10 sm:mt-14 gap-2">
-				{clientsData.map((client) => (
+			<div className="flex mt-10 gap-4 justify-center">
+				{technologiesData.slice(0,6).map((tech) => (
 					<AboutClientSingle
-						title={client.title}
-						image={client.img}
-						key={client.id}
+						title={tech.title}
+						image={tech.img}
+						key={tech.id}
+					/>
+				))}
+			</div>
+			<div className="flex mt-4 gap-4 justify-center">
+				{technologiesData.slice(6,12).map((tech) => (
+					<AboutClientSingle
+						title={tech.title}
+						image={tech.img}
+						key={tech.id}
 					/>
 				))}
 			</div>

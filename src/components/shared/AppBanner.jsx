@@ -23,9 +23,9 @@ const AppBanner = () => {
 						duration: 0.9,
 						delay: 0.1,
 					}}
-					className="font-general-semibold text-2xl lg:text-3xl xl:text-4xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
+					className="font-general-semibold text-lg lg:text-xl xl:text-3xl text-center sm:text-left text-ternary-dark dark:text-primary-light uppercase"
 				>
-					Hi, Iam Stoman
+					Hi, I am Aelisha Patel
 				</motion.h1>
 				<motion.p
 					initial={{ opacity: 0 }}
@@ -35,9 +35,21 @@ const AppBanner = () => {
 						duration: 0.9,
 						delay: 0.2,
 					}}
-					className="font-general-medium mt-4 text-lg md:text-xl lg:text-2xl xl:text-3xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
+					className="font-general-medium mt-4 text-2xl text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
 				>
-					A Full-Stack Developer & Design Enthusiast
+					Full-Stack Developer
+				</motion.p>
+				<motion.p
+					initial={{ opacity: 0 }}
+					animate={{ opacity: 1 }}
+					transition={{
+						ease: 'easeInOut',
+						duration: 0.9,
+						delay: 0.2,
+					}}
+					className="font-general-normal text-md text-center sm:text-left leading-normal text-gray-500 dark:text-gray-200"
+				>
+					Full-Stack Developer | React.js | Node.js | MongoDB | Next.js 
 				</motion.p>
 				<motion.div
 					initial={{ opacity: 0 }}
@@ -50,8 +62,8 @@ const AppBanner = () => {
 					className="flex justify-center sm:block"
 				>
 					<a
-						download="Stoman-Resume.pdf"
-						href="/files/Stoman-Resume.pdf"
+						download="AelishaPatel-Resume.pdf"
+						href="/files/aelisha-resume.pdf"
 						className="font-general-medium flex justify-center items-center w-36 sm:w-48 mt-12 mb-6 sm:mb-0 text-lg border border-indigo-200 dark:border-ternary-dark py-2.5 sm:py-3 shadow-lg rounded-lg bg-indigo-50 focus:ring-1 focus:ring-indigo-900 hover:bg-indigo-500 text-gray-500 hover:text-white duration-500"
 						aria-label="Download Resume"
 					>

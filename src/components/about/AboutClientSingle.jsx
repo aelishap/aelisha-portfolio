@@ -3,7 +3,7 @@ const AboutClientSingle = ({ title, image }) => {
 		<>
 			<img
 				src={image}
-				className="w-64 py-5 px-10 border bg-secondary-light border-ternary-light dark:border-ternary-dark shadow-sm rounded-lg mb-8 cursor-pointer"
+				className="w-24 border py-5 px-5 bg-secondary-light border-ternary-light dark:border-ternary-dark shadow-sm rounded-lg cursor-pointer"
 				alt={title}
 			/>
 		</>
